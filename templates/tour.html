@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coorg Tourism</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.g1L8Cc13rxk9jSq8SRVLBgHaEJ%26pid%3DApi&f=1&ipt=2cffbfa4508f3f68d298ecb161afa40303fe4f83c9981d49aabab39feec7b159&ipo=images') no-repeat center center/cover;
+            margin: 0;
+            padding: 0;
+            color: #2e3d29;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        header {
+            background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.f5cZMyLPihHFw_FJFJ-LVwHaE8%26pid%3DApi&f=1&ipt=59a3cf0ef1e14ba98851dcfe969fd95ab14baa0b581b4520db1b633464099585&ipo=images') no-repeat center center/cover;
+            color: #ffffff;
+            padding: 60px 0;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .tour-spot, .food-item {
+            background: #eaf3e2;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            border-left: 8px solid #2e5d24;
+        }
+        .tour-spot:hover, .food-item:hover {
+            transform: scale(1.03);
+            background: #d5e8c6;
+        }
+        .image-collage {
+            display: flex;
+            gap: 10px;
+        }
+        .image-collage img {
+            width: 49%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background: linear-gradient(to right, #4b8b3b, #2e5d24);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #1f3e1c;
+        }
+    </style>
+    <script>
+        function showMoreInfo(place) {
+            const pages = {
+                "Abbey Falls": "abbey",
+                "Raja’s Seat": "raja",
+                "Dubare Elephant Camp": "dubare",
+                "Nisargadhama": "nisargadhama",
+                "Talakaveri": "talakaveri",
+                "Mallali Falls": "mallali",
+                "Mandalpatti": "mandalpatti" 
+            };
+            
+            if (pages[place]) {
+                window.location.href = pages[place];
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 style="color: #fff;">Explore Coorg - The Scotland of India</h1>
+    </header>
+    <div class="container">
+        <div class="tour-spot">
+            <h2>Abbey Falls</h2>
+            <div class="image-collage">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.43XD0BMLz-BJaRg2PLYWYAHaE8%26pid%3DApi&f=1&ipt=386b3a39600fb80b76f0add2fd135f7691f19dbd50620be29184adec0eb7a6d0&ipo=images" alt="Abbey Falls Image 1">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.SsmTyz-ocD35s4XZndptJgHaE6%26pid%3DApi&f=1&ipt=60f66c6e848eca0010a1934b5422a6a1e57c3db6d3937bdb6147a2c89ac903ac&ipo=images" alt="Abbey Falls Image 2">
+            </div>
+            <p>Abbey Falls is a breathtaking waterfall surrounded by coffee plantations and lush greenery.</p>
+            <button onclick="showMoreInfo('Abbey Falls')">Learn More</button>
+        </div>
+        <div class="tour-spot">
+            <h2>Raja’s Seat</h2>
+            <div class="image-collage">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.KWhApjevVQjA5xERimXUkgHaE8%26pid%3DApi&f=1&ipt=51abfdefcd4319b242972465f93e2b48e3f6fc54999e20ef303d5a2f903fd91d&ipo=images" alt="Raja’s Seat Image 1">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.Rg9ZpS5B5mWlcn8Ioi0R-gHaDV%26pid%3DApi&f=1&ipt=7faa8b1303b8a809f9116f4fd1f097d0c2bd8f1703c7833f4e9694b36fbcd972&ipo=images" alt="Raja’s Seat Image 2">
+            </div>
+            <p>Raja’s Seat offers a mesmerizing sunset view and was a favorite retreat for Kodagu kings.</p>
+            <button onclick="showMoreInfo('Raja’s Seat')">Learn More</button>
+        </div>
+        <div class="tour-spot">
+            <h2>Dubare Elephant Camp</h2>
+            <div class="image-collage">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.25oNcDlQ_zGe7z3mo7UDiwHaDt%26pid%3DApi&f=1&ipt=5ab4446ef8560ec19947101bd7d82f1885cc20beee92f3cfb8e33d4668bc5dce&ipo=images" alt="Dubare Elephant Camp Image 1">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.jfytobgETuLoty9gQTKG_wHaD8%26pid%3DApi&f=1&ipt=27a2fddb0dfd1d371de652e275cf906bfcfd97b91a2cfcb19a8ec584b411d939&ipo=images" alt="Dubare Elephant Camp Image 2">
+            </div>
+            <p>Dubare Elephant Camp provides an opportunity to interact with elephants and learn about their conservation.</p>
+            <button onclick="showMoreInfo('Dubare Elephant Camp')">Learn More</button>
+        </div>
+        <div class="tour-spot">
+            <h2>Nisargadhama</h2>
+            <div class="image-collage">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.uiHnINW-vKWtQfneRjxSGQHaFj%26pid%3DApi&f=1&ipt=fb7d6c921d125c93b6973f394a574dc1111172eb54343fba3224419fde7ed399&ipo=images" alt="Nisargadhama Image 1">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.eyo07h15t71_SzMg1T-qAQHaE8%26pid%3DApi&f=1&ipt=6dc855ea0737b7b362a377b690eefa55f55dc6e9f0dd9ee7b86db2b46ea15637&ipo=images" alt="Nisargadhama Image 2">
+            </div>
+            <p>Nisargadhama is a beautiful island on the River Kaveri, known for its bamboo groves and deer park.</p>
+            <button onclick="showMoreInfo('Nisargadhama')">Learn More</button>
+        </div>
+        <div class="tour-spot">
+            <h2>Talakaveri</h2>
+            <div class="image-collage">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.5PC5QdllT3YnG1dD1KhWwwHaD8%26pid%3DApi&f=1&ipt=50ec789ef79ab6f414e8cc1aab7ca3567e921e447ae2689cddd49326e3c54aa0&ipo=images" alt="Talakaveri Image 1">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.UOZ2J5mlVulmc-jTjtYukgHaDt%26pid%3DApi&f=1&ipt=2107697fae9de7642b7faf3aaa86c20c411acb7bef7fb65e049aa3bd15f33352&ipo=images" alt="Talakaveri Image 2">
+            </div>
+            <p>Talakaveri is the birthplace of the Kaveri River and a popular pilgrimage site.</p>
+            <button onclick="showMoreInfo('Talakaveri')">Learn More</button>
+        </div>
+        <div class="tour-spot">
+            <h2>Mallali Falls</h2>
+            <div class="image-collage">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.GKa4vq4tehhdzFzZbJeS-gHaEK%26pid%3DApi&f=1&ipt=7a9c390972cadcf09955fcc1be113aaf60e5e34b12b1b35d84eb279b6d13aea9&ipo=images" alt="Mallali Falls Image 1">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.IUY0vZrP3PhUoXh3WYYAFAHaFj%26pid%3DApi&f=1&ipt=4b165526c731c9afe9cbc0661640035034a476593162620baa0a579f3cf1bd00&ipo=images" alt="Mallali Falls Image 2">
+            </div>
+            <p>Mallali Falls is a stunning waterfall located in the foothills of the Pushpagiri Mountains.</p>
+            <button onclick="showMoreInfo('Mallali Falls')">Learn More</button>
+        </div>
+        <div class="tour-spot">
+            <h2>Mandalpatti</h2>
+            <div class="image-collage">
+                <img src="https://imgs.search.brave.com/0tmL4X2aFetJ0MAyy7d1_fl6uMXrJ3bydEtf0UsfshA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dHJhd2VsbC5pbi9h/ZG1pbi9pbWFnZXMv/dXBsb2FkLzEzMzg3/MzI5MW1hbmRhbHBh/dHRpLmpwZw" alt="Mandalpatti Image 1">
+                <img src="https://imgs.search.brave.com/_E3Apw1zX6uZXwgD-SQlK7AYQ6O9AEteyRfUrp5XatM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90aGV0/cmF2ZWxzaG90cy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjAvMTIvTUFOREFM/UEFUVEktNi0xLmpw/Zw" alt="Mandalpatti Image 2">
+            </div>
+            <p>Mandalpatti is a magnificent and unique site in Coorg, Karnataka , overlooking the grasslands of Pushpagiri forests in the Western Ghats.</p>
+            <button onclick="showMoreInfo('Mandalpatti')">Learn More</button>
+        </div>
+        
+    </div>
+</body>
+</html>
